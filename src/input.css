@@ -2,6 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 #HomeVideo {
     position: absolute;
     top: 0;
@@ -12,7 +22,12 @@
     z-index: -1; /* Place the video behind other content */
 }
 
-ul{
+.navbar{
     margin-top: -1.5rem;
-    margin-right: .5rem;
+    margin-left: 38%;
+}
+
+.lan-change{
+    margin-top: -1.8rem;
+    margin-right: 1.5rem;
 }

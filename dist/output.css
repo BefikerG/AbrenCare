@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +448,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +502,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,119 +556,130 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
+.container{
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
 
-.absolute {
+.absolute{
   position: absolute;
 }
 
-.left-0 {
+.left-0{
   left: 0px;
 }
 
-.top-0 {
+.top-0{
   top: 0px;
 }
 
-.z-10 {
+.z-10{
   z-index: 10;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.min-h-full {
+.min-h-full{
   min-height: 100%;
 }
 
-.min-h-screen {
+.min-h-screen{
   min-height: 100vh;
 }
 
-.w-48 {
+.w-48{
   width: 12rem;
 }
 
-.w-auto {
+.w-auto{
   width: auto;
 }
 
-.w-full {
+.w-full{
   width: 100%;
 }
 
-.min-w-full {
+.min-w-full{
   min-width: 100%;
 }
 
-.max-w-none {
+.max-w-none{
   max-width: none;
 }
 
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
 
-.items-center {
+.items-center{
   align-items: center;
 }
 
-.justify-between {
+.justify-between{
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-10{
+  gap: 2.5rem;
 }
 
-.bg-cover {
+.gap-2{
+  gap: 0.5rem;
+}
+
+.bg-cover{
   background-size: cover;
 }
 
-.bg-center {
+.bg-center{
   background-position: center;
 }
 
-.p-4 {
+.p-4{
   padding: 1rem;
 }
 
-.text-black {
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #HomeVideo {
@@ -681,7 +694,12 @@ video {
   /* Place the video behind other content */
 }
 
-ul{
+.navbar{
   margin-top: -1.5rem;
-  margin-right: .5rem;
+  margin-left: 38%;
+}
+
+.lan-change{
+  margin-top: -1.8rem;
+  margin-right: 1.5rem;
 }
