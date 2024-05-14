@@ -8,7 +8,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -30,4 +30,77 @@ body{
 .lan-change{
     margin-top: -1.8rem;
     margin-right: 1.5rem;
+}
+
+.hero-section{
+    margin-bottom: 16rem;
+}
+
+/* Custom CSS for the loader */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Background color for loader */
+    z-index: 1000; /* Ensure loader is above all other content */
+    opacity: 1; /* Initial opacity for loader */
+    transition: opacity 1s ease-out; /* Transition effect for fading out */
+}
+.loader-wrapper.hidden {
+    opacity: 0; /* Final opacity for loader when hidden */
+    visibility: hidden; /* Hide the loader after the fade-out */
+}
+.loader {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    filter: url(#gooey);
+}
+svg {
+    height: 0;
+    width: 0;
+}
+.loader span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: water 3s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+@keyframes water {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%, 100% {
+        transform: rotate(360deg);
+    }
+}
+.loader span:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 30px #4DACB2;
+    background: linear-gradient(#4DACB2, #ffffff);
+}
+.hidden {
+    display: none;
+}
+.fade-in {
+    opacity: 0; /* Initial opacity for main content */
+    transition: opacity 5s ease-in; /* Transition effect for fading in */
+}
+.fade-in.show {
+    opacity: 1; /* Final opacity for main content when shown */
 }
