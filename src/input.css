@@ -8,7 +8,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -30,4 +30,8 @@ body{
 .lan-change{
     margin-top: -1.8rem;
     margin-right: 1.5rem;
+}
+
+.hero-section{
+    margin-bottom: 16rem;
 }

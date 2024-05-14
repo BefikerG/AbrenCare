@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbrenCare</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="shortcut icon" href="/asset/abren-care-LOGO-only.png" class="max-w-20" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
 </head>
 <body class="bg-center">
 
@@ -15,14 +17,14 @@
             </div>
             
             <ul class="flex gap-10 navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Tjänster</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
             <ul class="flex gap-2 lan-change" >
-                <li><a href="#">En</a></li>
-                <li><a href="#">Se</a></li>
+                <li><a href="#" class="to-english">En</a></li>
+                <li><a href="#" class="to-swedish">Se</a></li>
             </ul>
         </header>
 
@@ -31,12 +33,27 @@
                 <source src="/asset/home-vid.mp4" type="video/mp4">
               </video>
         </section>
+
+        <div class="hero-section flex flex-col items-center justify-center mx-auto text-center space-y-6 p-8 mt-52">
+            <h1 class="hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl ">
+                AbrenCare
+            </h1>
+            <p class="hero-description max-w-xl mx-auto text-center text-white">
+                Välkommen till Abrencare – din partner för personcentrerad vård och omsorg i hemmet.  
+            </p>
+            <a href="#">
+                <button class=" mt-9 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-gray-900 text-gray-900 hover:bg-blue-gray-50 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full" type="button">
+                    Läs mer
+                </button>
+            </a>
+        </div>
         
     </div>
     
 
 
 
-    
+
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
 </body>
 </html>
