@@ -10,6 +10,28 @@
 </head>
 <body class="bg-center">
 
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+        </div>
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"/>
+            </filter>
+        </svg>
+    </div>
+
+
     <div class="container min-h-screen flex flex-col justify-between">
         <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
             <div>
@@ -48,12 +70,15 @@
             </a>
         </div>
         
+
+
     </div>
     
 
 
 
 
-    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
 </body>
 </html>

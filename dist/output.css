@@ -886,64 +886,16 @@ video {
   margin-top: 1rem;
 }
 
-.mt-px{
-  margin-top: 1px;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
-.-mt-24{
-  margin-top: -6rem;
-}
-
-.mt-44{
-  margin-top: 11rem;
-}
-
 .mt-52{
   margin-top: 13rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mt-28{
-  margin-top: 7rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mt-9{
-  margin-top: 2.25rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-px{
+  margin-top: 1px;
 }
 
 .box-border{
@@ -1453,10 +1405,6 @@ video {
 
 .place-items-center{
   place-items: center;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .items-center{
@@ -2553,10 +2501,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pl-16{
-  padding-left: 4rem;
-}
-
 .pt-0{
   padding-top: 0px;
 }
@@ -3057,21 +3001,6 @@ video {
   color: rgb(245 127 23 / var(--tw-text-opacity));
 }
 
-.text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(238 238 238 / var(--tw-text-opacity));
-}
-
-.text-gray-100{
-  --tw-text-opacity: 1;
-  color: rgb(245 245 245 / var(--tw-text-opacity));
-}
-
-.text-gray-400{
-  --tw-text-opacity: 1;
-  color: rgb(189 189 189 / var(--tw-text-opacity));
-}
-
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3450,6 +3379,95 @@ body{
 
 .hero-section{
   margin-bottom: 16rem;
+}
+
+/* Custom CSS for the loader */
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  /* Background color for loader */
+  z-index: 1000;
+  /* Ensure loader is above all other content */
+  opacity: 1;
+  /* Initial opacity for loader */
+  transition: opacity 1s ease-out;
+  /* Transition effect for fading out */
+}
+
+.loader-wrapper.hidden {
+  opacity: 0;
+  /* Final opacity for loader when hidden */
+  visibility: hidden;
+  /* Hide the loader after the fade-out */
+}
+
+.loader {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  filter: url(#gooey);
+}
+
+svg {
+  height: 0;
+  width: 0;
+}
+
+.loader span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  animation: water 3s ease-in-out infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes water {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50%, 100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader span:before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 20px);
+  top: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 30px #4DACB2;
+  background: linear-gradient(#4DACB2, #ffffff);
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  opacity: 0;
+  /* Initial opacity for main content */
+  transition: opacity 5s ease-in;
+  /* Transition effect for fading in */
+}
+
+.fade-in.show {
+  opacity: 1;
+  /* Final opacity for main content when shown */
 }
 
 .placeholder\:opacity-0::-moz-placeholder{
