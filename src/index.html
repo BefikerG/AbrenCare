@@ -5,26 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbrenCare</title>
     <link rel="stylesheet" href="/dist/output.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/asset/abren-care-LOGO-only.png" class="max-w-20" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
 </head>
-<!-- bfg -->
-<body class="bg-center bg-gray-100">
-    <section class="1">
-    <div class="container min-h-screen flex flex-col justify-between">
+<body class="bg-center">
+
+    <div class="loader-wrapper fixed inset-0 flex justify-center items-center bg-white z-50" id="loader">
+        <div class="loader relative w-40 h-40" style="filter: url(#gooey);">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+        </div>
+        <svg class="hidden">
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"/>
+            </filter>
+        </svg>
+    </div>
+
+    <div class="container min-h-screen w-full flex flex-col justify-between">
         <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
             <div>
                 <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
             </div>
             
             <ul class="flex gap-10 navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Hem</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Om oss</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
             </ul>
             <ul class="flex gap-2 lan-change" >
-                <li><a href="#">En</a></li>
-                <li><a href="#">Se</a></li>
+                <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
+                <li><a href="#" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
             </ul>
         </header>
 
@@ -33,97 +54,31 @@
                 <source src="/asset/home-vid.mp4" type="video/mp4">
               </video>
         </section>
+
+        <div class="hero-section h-1/4 flex flex-col items-center justify-center text-center mx-auto space-y-6 p-8 mt-8 mr-44">
+            <h1 class="hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl transition-colors duration-700">
+                AbrenCare
+            </h1>
+            <p class="hero-description max-w-xl mx-auto text-center text-white">
+                Välkommen till Abrencare – din partner för personcentrerad vård och omsorg i hemmet.  
+            </p>
+            <a href="#">
+                <button class=" mt-6 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-gray-900 text-gray-900 hover:bg-blue-gray-50 duration-700 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full" type="button">
+                    Läs mer
+                </button>
+            </a>
+
+            <a href="#"><img class="icon phone-icon w-12 absolute bottom-0 right-0 m-4" src="/asset/phone-call.png" alt=""></a>
+        </div>
         
-    </div>
-    
-</section>
-<!-- abel  -->
-<!-- <div class="container">
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full md:w-1/3 p-4">
-      <div class="bg-gray-100 rounded-lg shadow-lg">
+
         
-        <div class="p-4">
-            <img src="../asset/clock.png" alt="Image" class="mr-4 h-20">
-          <h2 class="text-xl font-bold">24 Hour Service</h2>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 p-4">
-        <img src="../asset/clock.png" alt="Image" class="mr-4 h-20">
-      <div class="bg-gray-100 rounded-lg shadow-lg">
-        <div class="p-4">
-          <h2 class="text-xl font-bold">8 Years of Experience</h2>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 p-4">
-        
-      <div class="bg-gray-100 rounded-lg shadow-lg">
-        <img src="../asset/clock.png" alt="Image" class="mr-4 h-20">
-        <div class="p-4">
-          <h2 class="text-xl font-bold">Quality Service</h2>
-          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-<div class="container">
-    <div class="flex flex-wrap">
-        <div class="w-full md:w-1/3 p-6">
-          <div class="bg-gray-100 rounded-lg shadow-2xl flex items-center">
-            <img src="../asset/clock.png" alt="Image" class="mr-4 ml-2 h-20 p-1 w-20"> 
-            <div class="p-4">
-              <h2 class="text-xl font-bold">24 Hour Service</h2>
-              <p class="text-gray-700">We Don't Sleep 😭...............................</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6">
-          <div class="bg-gray-100 rounded-2xl shadow-2xl flex items-center">
-            <img src="../asset/customer-service.png" alt="Image" class="mr-4 ml-2 h-20 p-1 w-20">
-             <div class="p-4">
-              <h2 class="text-xl font-bold">8 Years of Experience</h2>
-              <p class="text-gray-700">We have been doing this for a long time 😫...........................</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6">
-          <div class="bg-gray-100 rounded-lg shadow-2xl flex items-center">
-            <img src="../asset/quality.png" alt="Image" class="mr-4 ml-2 h-20 p-1 w-20"> 
-            <div class="p-4">
-              <h2 class="text-xl font-bold">Quality Service</h2>
-              <p class="text-gray-700">We're Good at This 😏...........................</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-  
-
-
-    
-
-      <!-- About me  -->
-
-<div class="abt">
-    <div class="par">
 
     </div>
-    div.
-    <div class="pic">
 
-    </div>
-    <div class="picg">
 
-    </div>
-</div>
 
-    
+    <script  src="main.js"></script>
+    <script  src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
 </body>
 </html>
