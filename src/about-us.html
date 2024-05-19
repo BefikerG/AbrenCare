@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbrenCare</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="shortcut icon" href="/asset/abren-care-LOGO-only.png" class="max-w-20" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-center bg-cover relative">
+
+    <div class="absolute max-h-screen inset-0 bg-black opacity-70"></div>
+
+    
+    
+    <div class="loader-wrapper fixed inset-0 flex justify-center items-center bg-white z-50" id="loader">
+        <div class="loader relative w-40 h-40" style="filter: url(#gooey);">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+        </div>
+        <svg class="hidden">
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"/>
+            </filter>
+        </svg>
+    </div>
+
+    <div class="min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
+        <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white z-10 ">
+            <div>
+                <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
+            </div>
+            
+            <ul class="flex gap-10 navbar teachers-subheading text-xl">
+                <li><a href="index.html" class="hover-underline-animation nav-link">Hem</a></li>
+                <li><a href="about-us.html" class="hover-underline-animation nav-link">Om oss</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
+            </ul>
+            <ul class="flex gap-2 lan-change teachers-subheading text-xl">
+                <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
+                <li><a href="#" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
+            </ul>
+        </header>
+
+        <img class="bg-cover bg-center min-h-screen w-full" src="/asset/care.jpg"  alt="">
+
+        <div class="about-us-container">
+            <div class="about-us flex flex-col justify-center items-center p-8">
+                <h1 class="outfit-mainheading text-center text-6xl text-white">
+                    OM OSS
+                </h1>
+            
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <!-- <div class="description-section min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0 bg-white">
+        <div class="flex justify-center items-center min-h-screen">
+            <div class="w-70 h-70 bg-black"></div>
+           
+            <div class="area" >
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div >
+        </div>
+    </div> -->
+
+    <div class="description-section flex items-center">
+        <div class="justify-center flex bg-white child-div items-center rounded-3xl backdrop-blur-sm bg-white/30 flex-grow flex-col">
+            <div class="flex flex-col justify-center items-center flex-auto mt-72">
+                <h1 class="outfit-mainheading text-center text-6xl">
+                    VÅRA <span class="text-justify text-teal-300">PRIORITERINGAR</span>
+                </h1>
+    
+                <p class="text-center z-10 shrink leading-loose text-xl">
+                    At Abrencare, we strive to offer person-centered care and high-quality care in the home. We value and respect each individual's unique needs and wishes by creating a safe and trusting environment where the customer is always in focus. We combine our experience, competence and empathy to ensure that each client receives the care and attention they deserve. With us, the individual is active in his implementation plan and we always prioritize the customer's right to decide for himself. We strive to create an environment where the customer's boundaries are respected and where they feel worthy and respected.
+                </p>
+
+            </div>
+
+            
+
+        </div>
+        
+        <div class="area min-h-screen">
+            
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <div class="min-h-screen flex items-center flex-col w-full bg-white">
+        
+
+
+    </div>
+    
+
+
+
+
+    <script  src="main.js"></script>
+    <script  src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+</body>
+</html>

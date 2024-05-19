@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="shortcut icon" href="/asset/abren-care-LOGO-only.png" class="max-w-20" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body class="bg-center">
 
@@ -31,21 +34,21 @@
         </svg>
     </div>
 
-    <div class="container min-h-screen w-full flex flex-col justify-between">
+    <div class="container min-h-screen w-full flex flex-col justify-between inset-0">
         <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
             <div>
                 <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
             </div>
             
-            <ul class="flex gap-10 navbar">
+            <ul class="flex gap-10 navbar teachers-subheading text-xl">
                 <li><a href="#" class="hover-underline-animation nav-link">Hem</a></li>
-                <li><a href="#" class="hover-underline-animation nav-link">Om oss</a></li>
+                <li><a href="about-us.html" class="hover-underline-animation nav-link">Om oss</a></li>
                 <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
                 <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
             </ul>
-            <ul class="flex gap-2 lan-change" >
-                <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
-                <li><a href="#" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
+            <ul class="flex gap-2 lan-change teachers-subheading" >
+                <li><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
+                <li><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
             </ul>
         </header>
 
@@ -56,14 +59,14 @@
         </section>
 
         <div class="hero-section h-1/4 flex flex-col items-center justify-center text-center mx-auto space-y-6 p-8 mt-8 mr-44">
-            <h1 class="hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl transition-colors duration-700">
+            <h1 class="outfit-mainheading hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl transition-colors duration-700">
                 AbrenCare
             </h1>
-            <p class="hero-description max-w-xl mx-auto text-center text-white">
+            <p class="hero-description max-w-xl mx-auto text-center text-white teachers-lowerheading">
                 Välkommen till Abrencare – din partner för personcentrerad vård och omsorg i hemmet.  
             </p>
             <a href="#">
-                <button class=" mt-6 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-gray-900 text-gray-900 hover:bg-blue-gray-50 duration-700 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full" type="button">
+                <button class="teachers-subheading ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  mt-6 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-gray-900 text-gray-900 hover:bg-blue-gray-50 duration-700 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full" type="button">
                     Läs mer
                 </button>
             </a>
@@ -74,8 +77,13 @@
 
         
 
+        
+
     </div>
 
+
+
+    
 
 
     <script  src="main.js"></script>
