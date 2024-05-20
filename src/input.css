@@ -27,7 +27,7 @@ h1{
 .teachers-subheading {
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 
@@ -362,4 +362,31 @@ html, body {
 
 }
 
+.perspective-container {
+    perspective: 1000px;
+}
 
+.border {
+    position: relative; /* Ensure the container is positioned */
+}
+.relative {
+    position: relative; /* Ensure the main container is positioned */
+    display: flex; /* Use Flexbox to position the image */
+    flex-direction: column; /* Align items vertically */
+}
+
+.gradient-container {
+    position: absolute; /* Position the container absolutely within the main container */
+    bottom: 50%; /* Adjust bottom position as needed */
+    right: 10%; /* Adjust right position as needed */
+}
+
+.gradient-full {
+    width: 500%; /* Ensure the image takes up the entire container width */
+    height: 500%; /* Maintain aspect ratio */
+}
+
+
+.content-container {
+    flex-grow: 1; /* Allow content to take up remaining space */
+}

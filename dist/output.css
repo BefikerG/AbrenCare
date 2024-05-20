@@ -656,6 +656,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-36 {
+  bottom: 9rem;
+}
+
 .bottom-4 {
   bottom: 1rem;
 }
@@ -682,6 +686,10 @@ video {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-12 {
+  left: 3rem;
 }
 
 .left-2\/4 {
@@ -828,6 +836,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -948,6 +960,10 @@ video {
   height: 0.375rem;
 }
 
+.h-1\/3 {
+  height: 33.333333%;
+}
+
 .h-1\/4 {
   height: 25%;
 }
@@ -970,6 +986,10 @@ video {
 
 .h-2\.5 {
   height: 0.625rem;
+}
+
+.h-2\/4 {
+  height: 50%;
 }
 
 .h-3 {
@@ -1127,6 +1147,10 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .w-4 {
@@ -3819,6 +3843,45 @@ html, body {
   padding-top: 10rem;
 }
 
+.perspective-container {
+  perspective: 1000px;
+}
+
+.border {
+  position: relative;
+  /* Ensure the container is positioned */
+}
+
+.relative {
+  position: relative;
+  /* Ensure the main container is positioned */
+  display: flex;
+  /* Use Flexbox to position the image */
+  flex-direction: column;
+  /* Align items vertically */
+}
+
+.gradient-container {
+  position: absolute;
+  /* Position the container absolutely within the main container */
+  bottom: 50%;
+  /* Adjust bottom position as needed */
+  right: 10%;
+  /* Adjust right position as needed */
+}
+
+.gradient-full {
+  width: 500%;
+  /* Ensure the image takes up the entire container width */
+  height: 100%;
+  /* Maintain aspect ratio */
+}
+
+.content-container {
+  flex-grow: 1;
+  /* Allow content to take up remaining space */
+}
+
 .placeholder\:opacity-0::-moz-placeholder {
   opacity: 0;
 }
@@ -4927,6 +4990,11 @@ html, body {
 .hover\:text-light-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(3 169 244 / var(--tw-text-opacity));
+}
+
+.hover\:text-teal-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(77 182 172 / var(--tw-text-opacity));
 }
 
 .hover\:text-teal-500:hover {
@@ -6695,5 +6763,3 @@ html, body {
 .\[\&\:\:-webkit-slider-thumb\]\:\[-webkit-appearance\:none\]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-
-
