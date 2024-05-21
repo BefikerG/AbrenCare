@@ -391,3 +391,15 @@ html, body {
     flex-grow: 1; /* Allow content to take up remaining space */
 }
 
+.reveal{
+   
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
