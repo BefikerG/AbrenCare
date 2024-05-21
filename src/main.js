@@ -18,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1000); // Duration of the fade-out animation
     }, 3000); // Adjust the timeout duration as needed
 })
+
