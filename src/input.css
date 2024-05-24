@@ -405,7 +405,7 @@ html, body {
 
 .the-line{
     left: 44%;
-    position: relative;
+    
     margin-top: 10px;
 }
 
@@ -428,3 +428,11 @@ html, body {
 .marquee-content span {
     margin: 0 4rem; /* Add spaces around the bullet points */
 }
+
+.dr-img {
+    width: 65%;
+    position: relative;
+    top: 28rem;
+    left: 40rem;
+}
+

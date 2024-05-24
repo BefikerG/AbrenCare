@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbrenCare</title>
+    <title>AbrenCare - Welcome to Abrencare – your partner for person-centred care and care at home. </title>
     <link rel="stylesheet" href="/dist/output.css">
-    <link rel="shortcut icon" href="/asset/abren-care-LOGO-only.png" class="max-w-20" type="image/x-icon">
+    <link rel="shortcut icon" href="/asset/full scale png.png" class="max-w-20" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,10 +46,10 @@
             </div>
             
             <ul class="flex gap-10 navbar teachers-subheading text-xl">
-                <li><a href="index.html" class="hover-underline-animation nav-link">Hem</a></li>
-                <li><a href="about-us.html" class="hover-underline-animation nav-link">Om oss</a></li>
-                <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
-                <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
+                <li><a href="index.html" class="hover-underline-animation nav-link">Home</a></li>
+                <li><a href="about-us.html" class="hover-underline-animation nav-link">About</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Services</a></li>
+                <li><a href="#" class="hover-underline-animation nav-link">Contact</a></li>
             </ul>
             <ul class="flex gap-2 lan-change teachers-subheading text-xl">
                 <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
@@ -59,10 +59,10 @@
 
         <img class="bg-cover bg-center min-h-screen w-full" src="/asset/care.jpg"  alt="">
 
-        <div class="about-us-container">
+        <div class="about-us-container" id="about-us">
             <div class="about-us flex flex-col justify-center items-center p-8">
                 <h1 class="outfit-mainheading text-center text-6xl text-white">
-                    OM OSS
+                    ABOUT US
                 </h1>
             
                 <svg class="arrows">
@@ -97,17 +97,23 @@
         </div>
     </div> -->
 
-    <div class=" reveal description-section flex items-center">
+    <div class="reveal description-section flex items-center" id="description-section">
         <div class="justify-center flex bg-white child-div items-center rounded-3xl backdrop-blur-sm bg-white/30 flex-grow flex-col">
             <div class="flex flex-col justify-center items-center flex-auto mt-72">
                 <h1 class="outfit-mainheading text-center text-6xl">
-                    VÅRA <span class="text-justify text-teal-300">PRIORITERINGAR</span>
+                    OUR <span class="text-justify text-teal-300">PRIORITIES</span>
                 </h1>
 
                 <div class="the-line bg-teal-200 h-1 w-32 justify-center z-40 mx-auto absolute top-56"></div>
     
                 <p class="text-center z-10 shrink leading-loose text-xl">
-                    På Abrencare strävar vi efter att erbjuda personcentrerad vård och omsorg av hög kvalitet i hemmet. Vi värdesätter och respekterar varje individs unika behov och önskemål genom att skapa en trygg och tillitsfull miljö där kunden alltid står i fokus. Vi kombinerar vår erfarenhet, kompetens och empati för att säkerställa att varje kund får den vård och omsorg de förtjänar. Hos oss är individen aktiv i sin genomförandeplan och vi prioriterar alltid kundens rätt att själv bestämma. Vi strävar efter att skapa en miljö där kundens gränser respekteras och där de känner sig värdiga och respekterade.               </p>
+                    At Abrencare, we strive to offer person-centered care and high-quality care in the home. 
+                    We value and respect each individual's unique needs and wishes by creating a safe and trusting 
+                    environment where the customer is always in focus. We combine our experience, competence and 
+                    empathy to ensure that each client receives the care and attention they deserve. With us, the 
+                    individual is active in his implementation plan and we always prioritize the customer's 
+                    right to decide for himself. We strive to create an environment where the customer's 
+                    boundaries are respected and where they feel worthy and respected.               </p>
 
             </div>
 
@@ -134,30 +140,44 @@
         </div>
     </div>
 
+    <div class="reveal marquee w-full h-20 flex items-center bg-teal-300">
+      <div class="marquee-content text-3xl">
+          <span>Patient satisfaction</span> &#8226; 
+          <span>Efficiency</span> &#8226; 
+          <span>Safety</span> &#8226; 
+          <span>Evidence-based care</span> &#8226; 
+          <span>Teamwork and communication</span>
+      </div>
+    </div>
 
-    <div class="reveal relative min-h-screen flex flex-col w-full bg-white">
 
-        <div class=" content-container relative-container w-3/6 h-2/4 absolute left-12 p-4 top-1/2 transform -translate-y-1/2 text-center z-20">
+    <div class="reveal relative min-h-screen flex flex-col md:flex-row mx-auto w-full bg-white ">
+
+        <div class=" md:w-2/3  content-container relative-container w-3/6 h-2/4 absolute left-12 p-4 top-1/2 transform -translate-y-1/2 text-center z-20">
             <h1 class="text-black outfit-mainheading text-5xl text-left mb-6">
-                Förfinad operativ metod
+                Refined operational method
             </h1>
             <p class="text-left teachers-lowerheading leading-loose">
-                På Abrencare värdesätter vi personcentrerad omvårdnad där varje individ behandlas med 
-                respekt och värdighet. Vi skapar individanpassade vårdplaner utifrån dina behov och önskemål 
-                för att säkerställa trygghet, kvalitet och kontinuitet i vår vård och omsorg. Vi erbjuder flerspråkig 
-                personal och följer strikta kvalitets- och säkerhetsrutiner enligt branschstandarder för att garantera 
-                högsta standard i vårt arbete. Vi på Abrencare prioriterar flera viktiga områden för att säkerställa hög 
-                kvalitet och effektivitet i vår vård och omsorg:
+                At Abrencare, we value person-centred care where each individual is treated 
+                with respect and dignity. We create individualized care plans based on your 
+                needs and wishes to ensure safety, quality and continuity in our care and 
+                care. We offer multilingual staff and follow strict quality and safety 
+                procedures according to industry standards to ensure the highest standards 
+                in our work. We at Abrencare prioritize several important areas to ensure 
+                high quality and efficiency in our healthcare.
             </p>
 
             
         </div>
 
-        <img class="w-1/3 absolute bottom-36 " src="/asset/gradient.png" alt="">
-       
-        <div class="gradient-container ">
-            <!-- <img class="gradient-full w-full h-1/3" src="/asset/gradient-full.png" alt=""> -->
-            <img class="gradient-full " src="/asset/gradient-full.png" alt="">
+
+
+        <img class="w-1/3 absolute bottom-36" src="/asset/gradient.png" alt="">
+
+        <div class="gradient-container">
+
+            <img class="dr-img relative  " src="/asset/dr.png" alt="">
+
         </div>
         
         
@@ -165,13 +185,128 @@
 
     </div>
 
-
-    <div class="reveal relative min-h-screen flex flex-col w-full bg-blue-gray-50">
-
+    
 
 
 
+
+        <div class="reveal bg-blue-gray-50 py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+              <div class="max-w-2xl">
+                <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our <span class="text-teal-300">leadership</span></h2>
+                <p class="mt-6 text-lg leading-6 text-gray-600">At Abrencare, our experienced team of healthcare, social work, and 
+                  administrative professionals is dedicated to providing high-quality services in a safe and 
+                  trusting environment. We are passionate about making a positive difference and improving 
+                  the quality of life and well-being for our clients and their families.</p>
+              </div>
+              <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-16 w-16 rounded-full" src="/asset/nurse-avatar.jpg" alt="">
+                    <div>
+                      <a href="mailto:melat@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">melat@abrencare.se</h3></a>
+                      <p class="text-sm font-semibold leading-6 text-teal-300">CEO / Manager</p>
+                    </div>
+                  </div>
+                </li>
+          
+                <!-- More people... -->
+
+                <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="/asset/man-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:israel@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">israel@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Head of unit</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="/asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:coordinator@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">coordinator@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Coordinator</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="/asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:kevalitet@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">kevalitet@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Quality, education and deviations</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="/asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:info@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">info@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Economics / IT</p>
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+
+
+          
+<!-- Contact section -->
+<div class="reveal relative w-full min-h-screen flex sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row bg-[url('../asset/contact-us-image.png')] overflow-visible px-5" id="contact">
+    <div class="flex-[1] flex flex-col justify-end px-[100px] py-[70px]">
+      <p class="text-4xl font-bold text-white">Get In <span class="text-teal-300">Touch</span></p>
     </div>
+  
+    <div class="flex-[1.5] relative">
+      <div class="2xl:w-[600px] xl:w-[500px] h-screen bg-white rounded-lg translate-y-20 px-[50px] py-[100px]">
+        <form action="" class="w-full h-full flex flex-col items-center gap-[80px]" >
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="name" id="name" placeholder="Name">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="email" name="email" id="email" placeholder="Email">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="tel" name="phone" id="phone" placeholder="Phone">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="message" id="message" placeholder="Message">
+          <!-- <textarea class="outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> -->
+          <button class="w-fit bg-teal-300 text-white text-2xl py-4 px-10">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 pt-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-row flex-wrap lg:flex-row justify-between gap-12">
+        <div class="max-w-80 flex flex-col gap-6">
+          <img src="../asset/abren-care.png" alt="AbrenCare Logo" class="w-40">
+          <p class="text-sm leading-6">AbrenCare is a leading provider of home health care services. 
+            We offer a wide range of services to help individuals live independently in the comfort of their own homes.</p>
+        </div>
+        <div class="max-w-80 flex flex-col gap-6">
+          <h3 class="text-lg font-semibold">Contact Us</h3>
+          <p class="text-sm leading-6">1234 Main Street, Suite 100</p>
+          <p class="text-sm leading-6">City, State, 12345</p>
+          <p class="text-sm leading-6">Phone: 0736263585</p>
+          <p class="text-sm leading-6">Email: info@abrencare.se</p>
+        </div>
+        <div class="max-w-80 flex flex-col gap-6">
+          <h3 class="text-lg font-semibold">Quick Links</h3>
+          <a href="abrencare.se/#home" class="text-sm leading-6 hover:text-teal-300">Home</a>
+          <a href="abrencare.se/#about-us" class="text-sm leading-6 hover:text-teal-300">About Us</a>
+          <a href="abrencare.se/#services" class="text-sm leading-6 hover:text-teal-300">Services</a>
+          <a href="abrencare.se/#news" class="text-sm leading-6 hover:text-teal-300">News</a>
+          <a href="#contact" class="text-sm leading-6 hover:text-teal-300">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+    
     
 
 
