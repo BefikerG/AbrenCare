@@ -84,3 +84,17 @@ const blurHeader = () =>{
                        : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
+
+
+
+var nav = document.getElementById("mobile-nav")
+var openNav = document.getElementById("nav-toggle")
+var closeNav = document.getElementById("nav-close")
+
+openNav.addEventListener("click", () => {
+    nav.style.transform = "translateX(0)"
+})
+
+closeNav.addEventListener("click", () => {
+    nav.style.transform = "translateX(100%)"
+})

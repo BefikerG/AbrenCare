@@ -41,7 +41,7 @@
 </div>
 
 <div class=" min-h-screen w-full flex flex-col justify-between inset-0">
-    <header class="nav__menu absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
+    <!-- <header class="nav__menu absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
         <div>
             <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
         </div>
@@ -55,17 +55,50 @@
         <ul class="flex gap-2 lan-change teachers-subheading text-xl">
             <li class="nav__item"><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
             <li class="nav__item"><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
-        </ul>
+        </ul> -->
                <!-- CLOSE BUTTON -->
-               <div class="nav__close" id="nav-close">
+               <!-- <div class="nav__close" id="nav-close">
                 <i class="ri-close-fill"></i>
-               </div>
+               </div> -->
 
                     <!-- TOGGLE BUTTON -->
-                <div class="nav__toggle" id="nav-toggle">
+                <!-- <div class="nav__toggle" id="nav-toggle">
                   <i class="ri-menu-3-fill"></i>
                 </div>
-    </header>
+    </header> -->
+    <nav class="relative sm:px-10 md:px-20">
+      <div class="flex justify-between items-center gap-8">
+        <div class="nav__logo">
+          <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
+        </div>
+        <div class="nav-links gap-20 items-center ">
+          <ul class="flex items-center gap-10 text-white text-xl">
+            <li class="hover:text-teal-500 duration-300"><a href="#home" >Hem</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >Om oss</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="#services" >Tjänster</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
+          </ul>
+          <ul class="flex gap-2 font-bold text-xl ">
+            <li class="nav__item"><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
+            <li class="nav__item"><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+          </ul>
+        </div>
+        <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </div>
+      <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
+        <div class="absolute top-3 right-3 text-3xl" id="nav-close">
+          <i class="ri-close-fill"></i>
+        </div>
+        <a href="#home" >Hem</a>
+        <a href="about-us.html" >Om oss</a>
+        <a href="#services" >Tjänster</a>
+        <a href="#contact" >Kontakt</a>
+      </div>
+    </nav>
+
+    
 
     <section class=" bg-gray-100" id="home">
         <video autoplay muted loop class="absolute z-10 w-auto min-w-full min-h-full max-w-none bg-cover" id="HomeVideo">
@@ -74,7 +107,7 @@
     </section>
 
     <div class="hero-section h-1/4 flex flex-col items-center justify-center text-center mx-auto space-y-6 p-8 mt-8 mr-72">
-        <h1 class="outfit-mainheading hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl transition-colors duration-700">
+        <h1 class="outfit-mainheading hero-text text-gray-300 hover:text-teal-500 font-bold sm:text-4xl lg:text-8xl transition-colors duration-700">
             AbrenCare
         </h1>
         <p class="hero-description max-w-xl mx-auto text-center text-white teachers-lowerheading">
