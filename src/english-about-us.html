@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body class="bg-center bg-cover relative">
 
-    <div class="absolute max-h-screen inset-0 bg-black opacity-70"></div>
+    <div class="absolute z-20 max-h-screen inset-0 bg-black opacity-70"></div>
 
     
     
@@ -39,76 +40,76 @@
         </svg>
     </div>
 
-    <div class="min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
-        <!-- <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white z-10 ">
-            <div>
-                <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
-            </div>
-            
-            <ul class="flex gap-10 navbar teachers-subheading text-xl">
-                <li><a href="index.html" class="hover-underline-animation nav-link">Home</a></li>
-                <li><a href="about-us.html" class="hover-underline-animation nav-link">About</a></li>
-                <li><a href="#" class="hover-underline-animation nav-link">Services</a></li>
-                <li><a href="#" class="hover-underline-animation nav-link">Contact</a></li>
-            </ul>
-            <ul class="flex gap-2 lan-change teachers-subheading text-xl">
-                <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
-                <li><a href="#" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
-            </ul>
-        </header> -->
-
-
-        <nav class="relative sm:px-10 md:px-20">
-          <div class="flex justify-between items-center gap-8">
-            <div class="nav__logo">
+    <div class="overflow-hidden relative min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
+      <!-- <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white z-10 ">
+          <div>
               <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
-            </div>
-            <div class="nav-links gap-20 items-center ">
-              <ul class="flex items-center gap-10 text-white text-xl">
-                <li class="hover:text-teal-500 duration-300"><a href="#home" >Hem</a></li>
-                <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >Om oss</a></li>
-                <li class="hover:text-teal-500 duration-300"><a href="#services" >Tjänster</a></li>
-                <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
-              </ul>
-              <ul class="flex gap-2 font-bold text-xl ">
-                <li class="nav__item"><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
-                <li class="nav__item"><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
-              </ul>
-            </div>
-            <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
-              <i class="ri-menu-fill"></i>
-            </div>
           </div>
-          <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
-            <div class="absolute top-3 right-3 text-3xl" id="nav-close">
-              <i class="ri-close-fill"></i>
-            </div>
-            <a href="#home" >Hem</a>
-            <a href="about-us.html" >Om oss</a>
-            <a href="#services" >Tjänster</a>
-            <a href="#contact" >Kontakt</a>
+          
+          <ul class="flex gap-10 navbar teachers-subheading text-xl">
+              <li><a href="index.html" class="hover-underline-animation nav-link">Hem</a></li>
+              <li><a href="about-us.html" class="hover-underline-animation nav-link">Om oss</a></li>
+              <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
+              <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
+          </ul>
+          <ul class="flex gap-2 lan-change teachers-subheading text-xl">
+              <li><a href="english-about-us.html" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
+              <li><a href="about-us.html" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
+          </ul>
+      </header> -->
+      <nav class="relative z-50 w-full sm:px-10 md:px-20">
+        <div class="flex justify-between items-center gap-8">
+          <div class="nav__logo">
+            <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
           </div>
-        </nav>
-    
-
-
-        <img class="bg-cover bg-center min-h-screen w-full" src="/asset/care.jpg"  alt="">
-
-        <div class="about-us-container" id="about-us">
-            <div class="about-us flex flex-col justify-center items-center p-8">
-                <h1 class="outfit-mainheading text-center text-6xl text-white">
-                    ABOUT US
-                </h1>
-            
-                <svg class="arrows">
-                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                </svg>
-            </div>
+          <div class="nav-links gap-20 items-center ">
+            <ul class="flex items-center gap-10 text-white text-xl">
+              <li class="hover:text-teal-500 duration-300"><a href="english-index.html" >Home</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >About-Us</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="#services" >Services</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="#contact" >Contact</a></li>
+            </ul>
+            <ul class="flex gap-2 font-bold text-xl ">
+              <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+              <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+            </ul>
+          </div>
+          <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+          </div>
         </div>
-        
-    </div>
+        <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
+          <div class="absolute top-3 right-3 text-3xl" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+          <a href="english-index.html" >Home</a>
+          <a href="about-us.html" >About-Us</a>
+          <a href="#services" >Services</a>
+          <a href="#contact" >Contact</a>
+          <ul class="flex gap-2 font-bold text-xl ">
+            <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+            <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <img class="absolute z-10 bg-cover bg-center min-h-screen w-full object-cover object-center" src="/asset/care.jpg"  alt="">
+
+      <div class="about-us-container z-30" id="about-us">
+          <div class="about-us flex flex-col justify-center items-center p-8">
+              <h1 class="outfit-mainheading text-center text-6xl text-white">
+                  ABOUT US
+              </h1>
+          
+              <svg class="arrows">
+                  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg>
+          </div>
+      </div>
+      
+  </div>
 
     
     <!-- <div class="description-section min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0 bg-white">
@@ -205,19 +206,18 @@
             
         </div>
 
-
-
-        <img class="w-1/3 absolute bottom-36" src="/asset/gradient.png" alt="">
-
-        <div class="gradient-container">
-
-            <img class="dr-img relative  " src="/asset/dr.png" alt="">
-
+        <div class="gradient-container w-full md:w-1/3 h-56 md:h-auto absolute bottom-0 md:relative md:bottom-36">
+          <img class="w-1/3 absolute bottom-36" src="/asset/gradient.png" alt="">
+      
+          <div class="gradient-container">
+      
+              <img class="dr-img relative h-full" src="/asset/dr.png" alt="">
+      
+    
+          </div>
         </div>
         
         
-        
-
     </div>
 
     

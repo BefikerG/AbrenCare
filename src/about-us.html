@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body class="bg-center bg-cover relative">
 
-    <div class="absolute max-h-screen inset-0 bg-black opacity-70"></div>
+    <div class="absolute z-20 max-h-screen inset-0 bg-black opacity-70"></div>
 
     
     
@@ -39,7 +40,7 @@
         </svg>
     </div>
 
-    <div class="min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
+    <div class="overflow-hidden relative min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
         <!-- <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white z-10 ">
             <div>
                 <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
@@ -52,48 +53,49 @@
                 <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
             </ul>
             <ul class="flex gap-2 lan-change teachers-subheading text-xl">
-                <li><a href="#" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
-                <li><a href="#" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
+                <li><a href="english-about-us.html" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
+                <li><a href="about-us.html" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
             </ul>
         </header> -->
-
-     
-      <nav class="relative sm:px-10 md:px-20">
-        <div class="flex justify-between items-center gap-8">
-          <div class="nav__logo">
-            <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
+        <nav class="relative z-50 w-full sm:px-10 md:px-20">
+          <div class="flex justify-between items-center gap-8">
+            <div class="nav__logo">
+              <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
+            </div>
+            <div class="nav-links gap-20 items-center ">
+              <ul class="flex items-center gap-10 text-white text-xl">
+                <li class="hover:text-teal-500 duration-300"><a href="index.html" >Hem</a></li>
+                <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >Om oss</a></li>
+                <li class="hover:text-teal-500 duration-300"><a href="#services" >Tjänster</a></li>
+                <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
+              </ul>
+              <ul class="flex gap-2 font-bold text-xl ">
+                <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+                <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+              </ul>
+            </div>
+            <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
+              <i class="ri-menu-fill"></i>
+            </div>
           </div>
-          <div class="nav-links gap-20 items-center ">
-            <ul class="flex items-center gap-10 text-white text-xl">
-              <li class="hover:text-teal-500 duration-300"><a href="index.html" >Hem</a></li>
-              <li class="hover:text-teal-500 duration-300"><a href="#about-us" >Om oss</a></li>
-              <li class="hover:text-teal-500 duration-300"><a href="#services" >Tjänster</a></li>
-              <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
-            </ul>
+          <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
+            <div class="absolute top-3 right-3 text-3xl" id="nav-close">
+              <i class="ri-close-fill"></i>
+            </div>
+            <a href="index.html" >Hem</a>
+            <a href="about-us.html" >Om oss</a>
+            <a href="#services" >Tjänster</a>
+            <a href="#contact" >Kontakt</a>
             <ul class="flex gap-2 font-bold text-xl ">
-              <li class="nav__item"><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
-              <li class="nav__item"><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+              <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+              <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
             </ul>
           </div>
-          <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
-            <i class="ri-menu-fill"></i>
-          </div>
-        </div>
-        <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
-          <div class="absolute top-3 right-3 text-3xl" id="nav-close">
-            <i class="ri-close-fill"></i>
-          </div>
-          <a href="index.html" >Hem</a>
-          <a href="about-us.html" >Om oss</a>
-          <a href="index.html/#services" >Tjänster</a>
-          <a href="#contact" >Kontakt</a>
-        </div>
-      </nav>
-  
+        </nav>
 
-        <img class="bg-cover bg-center min-h-screen w-full" src="/asset/care.jpg"  alt="">
+        <img class="absolute z-10 bg-cover bg-center min-h-screen w-full object-cover object-center" src="/asset/care.jpg"  alt="">
 
-        <div class="about-us-container" id="about-us">
+        <div class="about-us-container z-30" id="about-us">
             <div class="about-us flex flex-col justify-center items-center p-8">
                 <h1 class="outfit-mainheading text-center text-6xl text-white">
                     OM OSS
@@ -110,8 +112,8 @@
     </div>
 
     
-    <!-- <div class="description-section min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0 bg-white">
-        <div class="flex justify-center items-center min-h-screen">
+    <div class="description-section min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0 bg-white">
+        <!-- <div class="flex justify-center items-center min-h-screen">
             <div class="w-70 h-70 bg-black"></div>
            
             <div class="area" >
@@ -131,34 +133,33 @@
         </div>
     </div> -->
 
-    <div class="reveal description-section flex items-center" id="description-section">
-        <div class="justify-center flex bg-white child-div items-center rounded-3xl backdrop-blur-sm bg-white/30 flex-grow flex-col">
-            <div class="flex flex-col justify-center items-center flex-auto mt-72">
-                <h1 class="outfit-mainheading text-center text-6xl">
-                    VÅRA <span class="text-justify text-teal-300">PRIORITERINGAR</span>
-                </h1>
+    <div class="reveal description-section flex items-center px-4 py-6 md:px-8 " id="description-section">
+      <div class="flex justify-center items-center bg-white rounded-3xl backdrop-blur-sm bg-white/30 flex-grow flex-col p-5  h-full md:w-auto">
+          <div class="flex flex-col justify-center items-center mt-12 w-full">
+              <h1 class="outfit-mainheading text-center text-4xl md:text-6xl">
+                  VÅRA <span class="text-teal-300">PRIORITERINGAR</span>
+              </h1>
+              <div class="bg-teal-200 h-1 w-32 mt-4"></div>
+              <p class="text-center leading-loose text-base md:text-xl mt-4">
+                  På Abrencare strävar vi efter att erbjuda personcentrerad vård och omsorg av 
+                  hög kvalitet i hemmet. Vi värdesätter och respekterar varje individs unika behov 
+                  och önskemål genom att skapa en trygg och tillitsfull miljö där kunden alltid står i fokus.
+                  Vi kombinerar vår erfarenhet, kompetens och empati för att säkerställa att varje 
+                  kund får den vård och omsorg de förtjänar. Hos oss är individen aktiv i sin 
+                  genomförandeplan och vi prioriterar alltid kundens rätt att själv bestämma. 
+                  Vi strävar efter att skapa en miljö där kundens gränser respekteras och där de 
+                  känner sig värdiga och respekterade.
+              </p>
+          </div>
+              
+      </div>
+  </div>
 
-                <div class="the-line bg-teal-200 h-1 w-32 justify-center z-40 mx-auto absolute top-56"></div>
-    
-                <p class="text-center z-10 shrink leading-loose text-xl">
-                    På Abrencare strävar vi efter att erbjuda personcentrerad vård och omsorg av 
-                    hög kvalitet i hemmet. Vi värdesätter och respekterar varje individs unika behov 
-                    och önskemål genom att skapa en trygg och tillitsfull miljö där kunden alltid står i fokus.
-                     Vi kombinerar vår erfarenhet, kompetens och empati för att säkerställa att varje 
-                     kund får den vård och omsorg de förtjänar. Hos oss är individen aktiv i sin 
-                     genomförandeplan och vi prioriterar alltid kundens rätt att själv bestämma. 
-                     Vi strävar efter att skapa en miljö där kundens gränser respekteras och där de 
-                     känner sig värdiga och respekterade.               </p>
-
-            </div>
-
-            
-
-        </div>
+  
         
         <div class="area min-h-screen">
             
-            <ul class="circles">
+            <ul class="circles ">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -173,7 +174,7 @@
 
 
         </div>
-    </div>
+   
 
     <div class="reveal marquee w-full h-20 flex items-center bg-teal-300">
       <div class="marquee-content text-3xl">
@@ -185,40 +186,49 @@
       </div>
     </div>
 
+ </div>
+    <div class="reveal relative min-h-screen flex flex-col md:flex-row mx-auto w-full bg-white">
 
-    <div class="reveal relative min-h-screen flex flex-col md:flex-row mx-auto w-full bg-white ">
+      <div class="md:w-2/3 content-container1 relative-container w-3/6 h-2/4 absolute left-12 p-4 top-1/2 transform -translate-y-1/2 text-center z-20">
+          <h1 class="text-black outfit-mainheading text-5xl text-left mb-6">
+              Förfinad operativ metod
+          </h1>
+          <p class="text-left teachers-lowerheading leading-loose">
+              På Abrencare värdesätter vi personcentrerad omvårdnad där varje individ behandlas med 
+              respekt och värdighet. Vi skapar individanpassade vårdplaner utifrån dina behov och önskemål 
+              för att säkerställa trygghet, kvalitet och kontinuitet i vår vård och omsorg. Vi erbjuder flerspråkig 
+              personal och följer strikta kvalitets- och säkerhetsrutiner enligt branschstandarder för att garantera 
+              högsta standard i vårt arbete. Vi på Abrencare prioriterar flera viktiga områden för att säkerställa hög 
+              kvalitet och effektivitet i vår vård och omsorg:
+          </p>
+      </div>
+      <div class="gradient-container w-full md:w-1/3 h-56 md:h-auto absolute bottom-0 md:relative md:bottom-36">
+      <img class="w-1/3 absolute bottom-36" src="/asset/gradient.png" alt="">
+  
+      <div class="gradient-container">
+  
+          <img class="dr-img md:block relative h-full" src="/asset/dr.png" alt="">
+  
 
-        <div class=" md:w-2/3  content-container relative-container w-3/6 h-2/4 absolute left-12 p-4 top-1/2 transform -translate-y-1/2 text-center z-20">
-            <h1 class="text-black outfit-mainheading text-5xl text-left mb-6">
-                Förfinad operativ metod
-            </h1>
-            <p class="text-left teachers-lowerheading leading-loose">
-                På Abrencare värdesätter vi personcentrerad omvårdnad där varje individ behandlas med 
-                respekt och värdighet. Vi skapar individanpassade vårdplaner utifrån dina behov och önskemål 
-                för att säkerställa trygghet, kvalitet och kontinuitet i vår vård och omsorg. Vi erbjuder flerspråkig 
-                personal och följer strikta kvalitets- och säkerhetsrutiner enligt branschstandarder för att garantera 
-                högsta standard i vårt arbete. Vi på Abrencare prioriterar flera viktiga områden för att säkerställa hög 
-                kvalitet och effektivitet i vår vård och omsorg:
-            </p>
-
-            
-        </div>
-
-
-
-        <img class="w-1/3 absolute bottom-36" src="/asset/gradient.png" alt="">
-
-        <div class="gradient-container">
-
-            <img class="dr-img relative  " src="/asset/dr.png" alt="">
-
-        </div>
-        
-        
-        
-
+      </div>
+      </div>
     </div>
+<style>
+  @media (max-width: 768px) {
+  .content-container1 {
+    width: 100%; 
+    left: 0; 
+    transform: none; 
+    text-align: center; 
+  }
+  
+  .dr-img {
+    display: none; 
+  }
+}
+</style>
 
+  
     
 
 

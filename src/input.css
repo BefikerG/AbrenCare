@@ -504,14 +504,23 @@ html, body {
     .nav-links{
         display: none;
     }
+    .dr-img{
+        display: none;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .nav-links{
         display: none;
     }
+    .dr-img{
+        display: none;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .nav-links{
+        display: none;
+    }
+    .dr-img{
         display: none;
     }
 }

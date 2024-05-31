@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 <!-- bfg -->
@@ -40,7 +41,7 @@
     </svg>
 </div>
 
-<div class=" min-h-screen w-full flex flex-col justify-between inset-0">
+<div class="overflow-hidden min-h-screen w-full flex flex-col justify-between inset-0">
     <!-- <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white  ">
         <div>
             <a href="#"><img src="/asset/abren-care.png" class="w-48" alt="logo"></a>
@@ -65,14 +66,14 @@
         </div>
         <div class="nav-links gap-20 items-center ">
           <ul class="flex items-center gap-10 text-white text-xl">
-            <li class="hover:text-teal-500 duration-300"><a href="#home" >Hem</a></li>
-            <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >Om oss</a></li>
-            <li class="hover:text-teal-500 duration-300"><a href="#services" >Tjänster</a></li>
-            <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="#home" >Home</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="english-about-us.html" >About-us</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="#services" >Service</a></li>
+            <li class="hover:text-teal-500 duration-300"><a href="#contact" >Contact</a></li>
           </ul>
           <ul class="flex gap-2 font-bold text-xl ">
-            <li class="nav__item"><a href="#" class="to-english text-white hover:text-teal-500">En</a></li>
-            <li class="nav__item"><a href="#" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+            <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+            <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
           </ul>
         </div>
         <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
@@ -83,10 +84,14 @@
         <div class="absolute top-3 right-3 text-3xl" id="nav-close">
           <i class="ri-close-fill"></i>
         </div>
-        <a href="#home" >Hem</a>
-        <a href="about-us.html" >Om oss</a>
-        <a href="#services" >Tjänster</a>
-        <a href="#contact" >Kontakt</a>
+        <a href="#home" >Home</a>
+        <a href="english-about-us.html" >About-us</a>
+        <a href="#services" >Service</a>
+        <a href="#contact" >Contact</a>
+        <ul class="flex gap-2 font-bold text-xl ">
+          <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+          <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -97,20 +102,20 @@
           </video>
     </section>
 
-    <div class="hero-section h-1/4 flex flex-col items-center justify-center text-center mx-auto space-y-6 p-8 mt-8 mr-72">
-        <h1 class="outfit-mainheading hero-text text-gray-300 hover:text-teal-500 font-bold text-8xl transition-colors duration-700">
+    <div class="hero-section h-full w-full flex flex-col items-center justify-center text-center mx-auto space-y-6 p-8 mt-8 mr-72">
+        <h1 class="outfit-mainheading hero-text text-gray-300 hover:text-teal-500 font-bold sm:text-4xl lg:text-8xl transition-colors duration-700">
             AbrenCare
         </h1>
         <p class="hero-description max-w-xl mx-auto text-center text-white teachers-lowerheading">
-            Welcome to Abrencare – your partner for person-centred care and care at home.   
+            Welcome to Abrencare – your partner for person-centred care and care at home. 
         </p>
         <a href="about-us.html">
             <button class="teachers-subheading ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  mt-6 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-white text-white hover:text-black hover:bg-blue-gray-50 duration-700 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full" type="button">
-                Learn more
+                Learn More
             </button>
         </a>
 
-        <a href="#"><img class="icon phone-icon w-12 absolute bottom-0 right-0 m-4" src="/asset/phone-call.png" alt=""></a>
+        <a href="#contact"><img class="icon phone-icon w-12 absolute bottom-0 right-0 m-4" src="/asset/phone-call.png" alt=""></a>
     </div>
     
 
@@ -175,26 +180,24 @@
 
 
 <!-- discription page -->
-<section class="reveal relative bg-gray-200 overflow-hidden min-h-screen">
-  <div class="flex absolute">
-    <img class="z-n10 mt-44" src="/asset/ribbon.png" alt="">
-
-    
+<section class="reveal relative bg-gray-200 overflow-hidden min-h-screen sm:bg-gray-300 sm:pt-10">
+  <div class="flex absolute sm:hidden">
+    <img class="z-n10 mt-44 sm:mt-20" src="/asset/ribbon.png" alt="">
   </div>
 
-  <div class="inset-y-0 right-0 flex justify-end relative">
-    <img class="w-2/5" src="/asset/nurse-old-man-posing-while-looking-camera.png" alt="">
+  <div class="inset-y-0 right-0 flex justify-end relative sm:hidden">
+    <img class="w-2/5 sm:w-3/5" src="/asset/nurse-old-man-posing-while-looking-camera.png" alt="">
   </div>
 
-  <div class=" flex bg-white z-20 h-3/4 w-2/4 absolute right-0 m-28 -mb-48 backdrop-blur-xl bg-white/30">
-
-    <h1 class="outfit-mainheading absolute top-14 left-48 text-4xl">
+  <div class="flex flex-col bg-white z-20 h-3/4 w-12/12 sm:w-2/4 absolute right-0 m-4 sm:m-28 sm:-mb-48 backdrop-blur-xl bg-white/30 p-4 sm:p-0 sm:flex-col">
+    <div class="heading-container w-full text-center sm:relative sm:mt-4 ">
+      <h1 class="outfit-mainheading text-2xl sm:text-4xl">
       WELCOME
     </h1>
 
-    <div class="the-line bg-teal-200 absolute h-1 w-32 justify-center z-40 top-28 left-60"></div>
+    <div class="the-line bg-teal-200 h-1 w-20 sm:w-32 mx-auto mt-2"></div>
 
-    <p class="text-center teachers-lowerheading m-auto leading-loose p-6">
+    <p class="text-center teachers-lowerheading m-auto leading-loose p-6 text-sm sm:text-base"></p>
       Welcome to Abrencare – your partner for person-centred care and care at home. With a focus on security, 
       quality and continuity, we offer tailor-made services in home health care, home care and 
       nursing care to meet your individual needs and wishes. Explore our services today and discover 
@@ -223,7 +226,7 @@
 <section class=" reveal bg-blue-gray-100" id="services">
   <div class="myservice">
     <h1 class="outfit-mainheading text-center text-bold text-4xl py-10"> 
-      VÅRA <span class="text-teal-300">SERVICES</span>
+      MY <span class="text-teal-300">SERVICES</span>
     </h1>
     <div class="the-line bg-teal-200 h-1 w-32 justify-center z-40 mx-auto mb-12 "></div>
   </div>
